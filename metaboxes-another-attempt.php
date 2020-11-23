@@ -1,6 +1,4 @@
-<?php 
-
-/**
+    /**
         * additional info
         * made with the meta box generator from market port GmbH
         */
@@ -94,9 +92,9 @@
                 wp_nonce_field( 'customMetaBoxes_data', 'customMetaBoxes_nonce' );
                 ?>
                 
-                            <input id="field_6553" name="field_6553" type="text" class="box-input" value="<?php echo get_post_meta( $post->ID, 'field_6553', true ); ?>" placeholder="<?php _e('heading', ''); ?>"  />
+                            <input id="field_8655" name="field_8655" type="text" class="box-input" value="<?php echo get_post_meta( $post->ID, 'field_8655', true ); ?>" placeholder="<?php _e('heading', ''); ?>"  />
                             
-                            <textarea id="field_4429" name="field_4429" class="box-input"><?php echo get_post_meta( $post->ID, 'field_4429', true ); ?></textarea>
+                            <textarea id="field_1968" name="field_1968" class="box-input"><?php echo get_post_meta( $post->ID, 'field_1968', true ); ?></textarea>
                             
                 <?php
             }
@@ -148,12 +146,6 @@
                             </div>
                             <input id="mu" name="mu" type="hidden" value="<?php echo get_post_meta( $post->ID, 'mu', true ); ?>" /> <input style="width: 19%" class="button title-media" id="mu_button" name="mu_button" type="button" value="<?php _e('Upload', ''); ?>" />
                             
-                            <?php $meta_value = get_post_meta( $post->ID, 'field_1221', true ); ?>
-                        
-                            <select id="field_1221" name="field_1221" >
-                            <option value="what,else,can,be,done" <?php if( $meta_value == what,else,can,be,done ){ echo 'selected'; } ?>></option>
-                            </select>
-                        
                 <?php
             }
             
@@ -175,10 +167,10 @@
                             update_post_meta( $post_id, 'content_additional', esc_attr( $_POST['content_additional'] ) );	
                         if ( isset( $_POST['cheading'] ) )
                             update_post_meta( $post_id, 'cheading', esc_attr( $_POST['cheading'] ) );	
-                        if ( isset( $_POST['field_6553'] ) )
-                            update_post_meta( $post_id, 'field_6553', esc_attr( $_POST['field_6553'] ) );	
-                        if ( isset( $_POST['field_4429'] ) )
-                            update_post_meta( $post_id, 'field_4429', esc_attr( $_POST['field_4429'] ) );	
+                        if ( isset( $_POST['field_8655'] ) )
+                            update_post_meta( $post_id, 'field_8655', esc_attr( $_POST['field_8655'] ) );	
+                        if ( isset( $_POST['field_1968'] ) )
+                            update_post_meta( $post_id, 'field_1968', esc_attr( $_POST['field_1968'] ) );	
                         if ( isset( $_POST['theeditor'] ) )
                             update_post_meta( $post_id, 'theeditor', esc_attr( $_POST['theeditor'] ) );	
                         if ( isset( $_POST['timeofthe'] ) )
@@ -190,9 +182,7 @@
                         if ( isset( $_POST['theurl'] ) )
                             update_post_meta( $post_id, 'theurl', esc_url_raw( $_POST['theurl'] ) );	
                         if ( isset( $_POST['mu'] ) )
-                            update_post_meta( $post_id, 'mu', esc_attr( $_POST['mu'] ) );	
-                        if ( isset( $_POST['field_1221'] ) )
-                            update_post_meta( $post_id, 'field_1221', esc_attr( $_POST['field_1221'] ) );
+                            update_post_meta( $post_id, 'mu', esc_attr( $_POST['mu'] ) );
 
             }
             
@@ -320,6 +310,6 @@
         
         }  
         new customMetaBoxes;
-        //Source: http://tools.marketport.site/generators/metabox-generator/
+//Source: http://tools.marketport.site/generators/metabox-generator/
         ?>
         
